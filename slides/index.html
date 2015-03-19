@@ -1,295 +1,338 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Make a SASSy CSS Cocktail</title>
+    <title>Make a SASSy CSS Cocktail</title>
 
-		<meta name="description" content="Make a SASSy CSS Cocktail: Bourbon and Bitters Served Neat">
-		<meta name="author" content="Brandon Martinez">
+    <meta name="description" content="Make a SASSy CSS Cocktail: Bourbon and Bitters Served Neat">
+    <meta name="author" content="Brandon Martinez">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h3>Make a SASSy CSS Cocktail</h3>
-					<h4>Bourbon &amp; Bitters Served Neat</h4>
-					<p>
-						<small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
-					</p>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h3>Make a SASSy CSS Cocktail</h3>
+          <h4>Bourbon &amp; Bitters Served Neat</h4>
+          <p>
+            <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
+          </p>
+        </section>
 
-				<section>
-					<h2>About Me</h2>
+        <section>
+          <h2>About Me</h2>
 
-					<img src="img/avatar.jpg" style="width: 300px; height: auto;" />
-					<img src="img/skylinelogo.png" style="width: 400px; height: auto; border: none; box-shadow: none;" />
+          <img src="img/avatar.jpg" style="width: 300px; height: auto;" />
+          <img src="img/skylinelogo.png" style="width: 400px; height: auto; border: none; box-shadow: none;" />
 
-					<p>
-						<small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
-					</p>
+          <p>
+            <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
+          </p>
 
-					<p>
-						<small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
-					</p>
-				</section>
+          <p>
+            <small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
+          </p>
+        </section>
 
-				<section>
-					<h1>Let's Get Started!</h1>
-				</section>
+        <section>
+          <h1>Let's Get Started!</h1>
+        </section>
 
-				<section>
-					<h2>CSS Preprocessors</h2>
-					<h3>What are they?</h3>
+        <section>
+          <h2>CSS Preprocessors</h2>
+          <h3>What are they?</h3>
 
-					<p>Utilities that <em>preprocess</em> languages into CSS</p>
+          <p>Utilities that <em>preprocess</em> languages into CSS</p>
 
-					<p>Allow for modular, DRY, development of CSS</p>
+          <p>Allow for modular, DRY, development of CSS</p>
 
-					<p>Provide a superset of features, such as variables, mixins, imports, and more</p>
+          <p>Provide a superset of features, such as variables, mixins, imports, and more</p>
 
-					<p><a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">Less.js</a>, and <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> are the most popular</p>
+          <p><a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">Less.js</a>, and <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> are the most popular</p>
 
-					<p>We'll be focusing on Sass</p>
-				</section>
+          <p>We'll be focusing on Sass</p>
+        </section>
 
-				<section>
-					<h2>What's Bootstrap?</h2>
+        <section>
+          <h2>What's Bootstrap?</h2>
 
-					<p>An HTML, CSS, and JS framework for rapid web development</p>
+          <p>An HTML, CSS, and JS framework for rapid web development</p>
 
-					<p>Developed originally with Less.js, but now additionally has a Sass port</p>
+          <p>Developed originally with Less.js, but now additionally has a Sass port</p>
 
-					<p>Includes lots of design patterns, widgets, interactive features, and more that you would expect out of a <strong>framework</strong></p>
-				</section>
+          <p>Includes lots of design patterns, widgets, interactive features, and more that you would expect out of a <strong>framework</strong></p>
+        </section>
 
-				<section>
-					<h2>Why Not Bootstrap?</h2>
+        <section>
+          <h2>Why Not Bootstrap?</h2>
 
-					<a href="http://getbootstrap.com/examples/theme/" target="_blank"><img src="img/vanillabootstrap.png" width="300" height="300" /></a>
+          <a href="http://getbootstrap.com/examples/theme/" target="_blank"><img src="img/vanillabootstrap.png" width="300" height="300" /></a>
 
-					<p>Still have to work to customize it</p>
+          <p>Still have to work to customize it</p>
 
-					<p>Lots of extra markup (classes used to style)</p>
+          <p>Lots of extra markup (classes used to style)</p>
 
-					<p>May get more features than needed</p>
-				</section>
+          <p>May get more features than needed</p>
+        </section>
 
-				<section>
-					<h2>Getting SASSy</h2>
+        <section>
+          <h2>Getting SASSy</h2>
 
-					<p>Some content</p>
-				</section>
+          <p>A quick sample:</p>
 
-				<section>
-					<h2>Introducing Bourbon</h2>
+            <pre><code data-trim class="css">
+// SCSS
 
-					<p>Some content</p>
-				</section>
+$base-text-color: #000;
+$base-text-hover-color: #444;
 
-				<section>
-					<h2>Introducing Bourbon</h2>
+#header {
+  h1 {
+    color: $base-text-color;
 
-					<h1>Demo</h1>
-				</section>
+    a {
+      text-decoration: none;
 
-				<section>
-					<h2>Bourbon Served Neat</h2>
+      &:hover {
+        text-decoration: underline;
+        color: $base-text-hover-color;
+      }
+    }
+  }
+}
 
-					<p>Some content</p>
-				</section>
 
-				<section>
-					<h2>Bourbon Served Neat</h2>
+/* CSS */
 
-					<h1>Demo</h1>
-				</section>
+#header h1 {
+  color: #000;
+}
 
-				<section>
-					<h2>A Splash of Bitters</h2>
+#header h1 a {
+  text-decoration: none;
+}
 
-					<p>Some content</p>
-				</section>
+#header h1 a:hover {
+  text-decoration: underline;
+  color: #444;
+}
 
-				<section>
-					<h2>A Splash of Bitters</h2>
+/* Compressed! */
+#header h1{color:#000}#header h1 a{text-decoration:none}#header h1 a:hover{text-decoration:underline;color:#444}
 
-					<h1>Demo</h1>
-				</section>
 
-				<section>
-					<h2>Bartender Etiquette</h2>
+            </code></pre>
+        </section>
 
-					<p>Some content</p>
-				</section>
+        <section>
+          <h2>Introducing Bourbon</h2>
 
-				<section>
-					<h2>Bartender Etiquette</h2>
+          <p>Some content</p>
+        </section>
 
-					<h1>Demo</h1>
-				</section>
+        <section>
+          <h2>Introducing Bourbon</h2>
 
-				<section>
-					<h2>Ready for a Refill?</h2>
+          <h1>Demo</h1>
+        </section>
 
-					<p>Some content</p>
-				</section>
+        <section>
+          <h2>Bourbon Served Neat</h2>
 
-				<section>
-					<h2>Ready for a Refill?</h2>
+          <p>Some content</p>
+        </section>
 
-					<h1>Demo</h1>
-				</section>
+        <section>
+          <h2>Bourbon Served Neat</h2>
 
-				<section>
-					<h1>Questions?</h1>
-				</section>
+          <h1>Demo</h1>
+        </section>
 
-				<section>
-					<h2>Thank you!</h2>
+        <section>
+          <h2>A Splash of Bitters</h2>
 
-					<img src="img/avatar.jpg" style="width: 300px; height: auto;" />
-					<img src="img/skylinelogo.png" style="width: 400px; height: auto; border: none; box-shadow: none;" />
+          <p>Some content</p>
+        </section>
 
-					<p>
-						<small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
-					</p>
+        <section>
+          <h2>A Splash of Bitters</h2>
 
-					<p>
-						<small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
-					</p>
-				</section>
-			</div>
+          <h1>Demo</h1>
+        </section>
 
-		</div>
+        <section>
+          <h2>Bartender Etiquette</h2>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+          <p>Some content</p>
+        </section>
 
-		<script>
+        <section>
+          <h2>Bartender Etiquette</h2>
 
-			Reveal.initialize({
-				// Display controls in the bottom right corner
-				controls: true,
+          <h1>Demo</h1>
+        </section>
 
-				// Display a presentation progress bar
-				progress: true,
+        <section>
+          <h2>Ready for a Refill?</h2>
 
-				// Display the page number of the current slide
-				slideNumber: false,
+          <p>Some content</p>
+        </section>
 
-				// Push each slide change to the browser history
-				history: true,
+        <section>
+          <h2>Ready for a Refill?</h2>
 
-				// Enable keyboard shortcuts for navigation
-				keyboard: true,
+          <h1>Demo</h1>
+        </section>
 
-				// Enable the slide overview mode
-				overview: true,
+        <section>
+          <h1>Questions?</h1>
+        </section>
 
-				// Vertical centering of slides
-				center: true,
+        <section>
+          <h2>Thank you!</h2>
 
-				// Enables touch navigation on devices with touch input
-				touch: true,
+          <img src="img/avatar.jpg" style="width: 300px; height: auto;" />
+          <img src="img/skylinelogo.png" style="width: 400px; height: auto; border: none; box-shadow: none;" />
 
-				// Loop the presentation
-				loop: false,
+          <p>
+            <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
+          </p>
 
-				// Change the presentation direction to be RTL
-				rtl: false,
+          <p>
+            <small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
+          </p>
+        </section>
+      </div>
 
-				// Turns fragments on and off globally
-				fragments: true,
+    </div>
 
-				// Flags if the presentation is running in an embedded mode,
-				// i.e. contained within a limited portion of the screen
-				embedded: false,
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-				// Number of milliseconds between automatically proceeding to the
-				// next slide, disabled when set to 0, this value can be overwritten
-				// by using a data-autoslide attribute on your slides
-				autoSlide: 0,
+    <script>
 
-				// Stop auto-sliding after user input
-				autoSlideStoppable: true,
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
 
-				// Enable slide navigation via mouse wheel
-				mouseWheel: false,
+        // Display a presentation progress bar
+        progress: true,
 
-				// Hides the address bar on mobile devices
-				hideAddressBar: true,
+        // Display the page number of the current slide
+        slideNumber: false,
 
-				// Opens links in an iframe preview overlay
-				previewLinks: false,
+        // Push each slide change to the browser history
+        history: true,
 
-				// Transition style
-				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
 
-				// Transition speed
-				transitionSpeed: 'default', // default/fast/slow
+        // Enable the slide overview mode
+        overview: true,
 
-				// Transition style for full page slide backgrounds
-				backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+        // Vertical centering of slides
+        center: true,
 
-				// Number of slides away from the current that are visible
-				viewDistance: 3,
+        // Enables touch navigation on devices with touch input
+        touch: true,
 
-				// Parallax background image
-				// parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+        // Loop the presentation
+        loop: false,
 
-				// // Parallax background size
-				// parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+        // Change the presentation direction to be RTL
+        rtl: false,
 
-				// theme: 'sky', // available themes are in /css/theme
+        // Turns fragments on and off globally
+        fragments: true,
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() {
-						hljs.initHighlightingOnLoad();
-					} },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
 
-		</script>
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
 
-	</body>
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style
+        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        // parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // // Parallax background size
+        // parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // theme: 'sky', // available themes are in /css/theme
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() {
+            hljs.initHighlightingOnLoad();
+          } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
