@@ -1,0 +1,146 @@
+@import "scss/normalize";
+@import "scss/bourbon/bourbon";
+@import "scss/neat/neat";
+
+// Bourbon: make importing font faces easier
+@include font-face("Chunk", "fonts/Chunkfive-webfont", $file-formats: eot woff2 woff ttf);
+
+// Bourbon: setup keyframe for animation
+@include keyframes(spin) {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(-360deg));
+  }
+}
+
+// Neat Configuration
+$max-width: em(960);
+$grid-columns: 3;
+//$visual-grid: true;
+
+// Neat: Breakpoint for mobile
+$small-screen: new-breakpoint(max-width 960px 1);
+$large-screen: new-breakpoint(min-width 961px $grid-columns);
+
+body {
+	// Bourbon: easy linear gradients!
+	@include linear-gradient(#1e5799, #fff);
+}
+
+.container {
+	// Neat: set widths and margins based on our neat settings
+	@include outer-container();
+}
+
+#container {
+	background: #fff;
+	margin: em(50) auto;
+
+	// Bourbon: calculate number of ems per given pixel value
+	padding: em(15) em(30);
+	//width: 720px;
+}
+
+#masthead {
+	margin: 0;
+
+	#logo {
+		text-align: center;
+		font: {
+			size: 3em;
+			family: "Chunk";
+		}
+	}
+}
+
+#content {
+	// Neat: set our column width
+	@include span-columns(2);
+
+	// Small screens will take up the entire available column
+	@include media($small-screen) {
+		@include span-columns(1);
+	}
+
+	.post {
+		header {
+			margin: 0 0 em(15) 0;
+			.meta {
+				> span {
+					display: block;
+				}
+			}
+		}
+
+		section {
+			// Bourbon: pesky clearfixing; thankfully it's a single line here!
+			@include clearfix;
+
+			margin: 0 0 em(30) 0;
+
+			> img {
+				// Bourbon: playing around with effects
+				@include filter(grayscale(100%));
+
+				&:hover {
+					// Neat: animation only on large screens
+					@include media($large-screen) {
+						// Bourbon animation on hover
+						@include animation(spin 2.0s ease-in);
+					}
+				}
+
+				width: em(300);
+				height: auto;
+				margin-right: em(40);
+				float: left;
+
+				@include media($small-screen) {
+					width: 100%;
+					margin: 0 0 em(40) 0;
+					float: none;
+				}
+			}
+
+			p {
+				padding-bottom: em(10);
+			}
+
+			&.continued-content {
+				// Neat: only make columned on a larger screen
+				@include media($large-screen) {
+					// Bourbon: implement columns
+					@include columns(3);
+					@include column-rule(1px solid #eee);
+					@include column-gap(em(30));
+				}
+			}
+		}
+	}
+}
+
+#sidebar {
+	// Neat: set our column width
+	@include span-columns(1);
+
+	@include media($small-screen) {
+		display: none;
+	}
+}
+
+#feedback {
+	width: 100%;
+	background: #1e5799;
+	form {
+		label, input, textarea {
+			display: block;
+		}
+
+		button {
+			// Bourbon: Easy button
+			@include button;
+		}
+	}
+}
