@@ -19,13 +19,18 @@ body {
 	@include linear-gradient(#1e5799, #fff);
 }
 
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 720px;
+}
+
 #container {
 	background: #fff;
 	margin: em(50) auto;
 
 	// Bourbon: calculate number of ems per given pixel value
 	padding: em(15) em(30);
-	width: 720px;
 }
 
 #masthead {
