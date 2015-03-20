@@ -1,0 +1,66 @@
+#content {
+	// Neat: set our column width
+	@include span-columns(2);
+
+	// Small screens will take up the entire available column
+	@include media($small-screen) {
+		@include span-columns(1);
+	}
+
+	.post {
+		header {
+			margin: 0 0 $small-gutter 0;
+			.meta {
+				> span {
+					display: block;
+				}
+			}
+		}
+
+		section {
+			// Bourbon: pesky clearfixing; thankfully it's a single line here!
+			@include clearfix;
+
+			margin: 0 0 $large-gutter 0;
+
+			> img {
+				// Bourbon: playing around with effects
+				@include filter(grayscale(100%));
+
+				&:hover {
+					// Neat: animation only on large screens
+					@include media($large-screen) {
+						// Bourbon animation on hover
+						@include animation(spin 2.0s ease-in);
+					}
+				}
+
+				width: em(300);
+				height: auto;
+				margin-right: $xlarge-gutter;
+				margin-bottom: $small-gutter;
+				float: left;
+
+				@include media($small-screen) {
+					width: 100%;
+					margin-right: 0;
+					float: none;
+				}
+			}
+
+			p {
+				padding-bottom: em(10);
+			}
+
+			&.continued-content {
+				// Neat: only make columned on a larger screen
+				@include media($large-screen) {
+					// Bourbon: implement columns
+					@include columns(3);
+					@include column-rule($base-border);
+					@include column-gap($large-gutter);
+				}
+			}
+		}
+	}
+}

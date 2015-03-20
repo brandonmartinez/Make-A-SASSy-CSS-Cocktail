@@ -1,0 +1,11 @@
+#sidebar {
+	// Neat: set our column width
+	@include span-columns(1);
+
+	@include media($small-screen) {
+		display: none;
+	}
+
+	// Refills: load in searchbar refill
+	@import "components/refill-searchbar";
+}
