@@ -1,0 +1,11 @@
+#masthead {
+	margin: 0 0 $large-gutter 0;
+
+	#logo {
+		text-align: center;
+		font: {
+			size: 3em;
+			family: "Chunk";
+		}
+	}
+}

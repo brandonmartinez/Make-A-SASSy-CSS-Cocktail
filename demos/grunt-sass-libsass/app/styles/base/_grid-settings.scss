@@ -1,0 +1,10 @@
+@import "../neat/neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Configuration
+$max-width: em(960);
+$grid-columns: 3;
+//$visual-grid: true;
+
+// Neat: Breakpoint for mobile
+$small-screen: new-breakpoint(max-width 960px 1);
+$large-screen: new-breakpoint(min-width 961px $grid-columns);
