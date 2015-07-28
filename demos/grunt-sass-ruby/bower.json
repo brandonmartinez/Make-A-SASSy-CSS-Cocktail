@@ -1,7 +1,0 @@
-{
-  "name": "grunt-sass-ruby",
-  "private": true,
-  "dependencies": {
-    "jquery": "~1.11.1"
-  }
-}
