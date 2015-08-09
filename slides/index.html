@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>Make a SASSy CSS Cocktail</title>
@@ -15,101 +15,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme/skyline.css" id="theme">
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="reveal">
+        <header class="page-title"></header>
 
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
-        <section>
-          <h3>Make a SASSy CSS Cocktail</h3>
-          <h4>Bourbon &amp; Bitters Served Neat</h4>
-          <p>
-            <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
-          </p>
-        </section>
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section class="intro" data-background="img/skyline-intro-background.jpg">
+                <div class="interior">
+                    <h3>Make a SASSy CSS Cocktail</h3>
+                    <h4>Bourbon &amp; Bitters Served Neat</h4>
+                </div>
+            </section>
 
-        <section>
-          <h2>About Me</h2>
+            <section data-state="about-me">
+                <style>
+                    .about-me header:after {
+                        content: "About Me";
+                    }
+                </style>
 
-          <img src="img/avatar.jpg" style="width: 300px; height: auto;" />
-          <img src="img/skylinelogo.png" style="width: 400px; height: auto; border: none; box-shadow: none;" />
+                <img src="img/avatar.jpg" style="width: 300px; height: auto;" />
 
-          <p>
-            <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
-          </p>
+                <p>
+                    <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
+                </p>
 
-          <p>
-            <small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
-          </p>
-        </section>
+                <p>
+                    <small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
+                </p>
+            </section>
 
-        <section>
-          <h1>Let's Get Started!</h1>
-        </section>
+            <section data-state="about-skyline">
+                <style>
+                    .about-skyline header:after {
+                        content: "About Skyline";
+                    }
+                </style>
+                <h5>We Are Hiring!</h5>
+                <p><small>Explore our current openings today! Stop by the Skyline booth or visit: SkylineTechnologies.com/Careers</small>
+                </p>
 
-        <section>
-          <h2>CSS Preprocessors</h2>
-          <h3>What are they?</h3>
+                <ul style="font-size: 0.6em;">
+                    <li>Founded in 1992 as a tech staffing agency </li>
+                    <li>Evolved into a full service IT and marketing consulting firm </li>
+                    <li>Associated Owned</li>
+                    <li>Locations: Appleton, Green Bay, Milwaukee</li>
+                    <li>176 Associates
+                        <ul>
+                            <li>25 Certified Scrum Masters (CSM)</li>
+                            <li>2 Certified Scrum Practitioners (CSP)</li>
+                            <li>50+ Microsoft Certified Professionals </li>
+                        </ul>
+                    </li>
+                    <li>Microsoft Partnership
+                        <ul>
+                            <li>Gold Certified Partner</li>
+                            <li>2013 Azure Partner of the Year – Midwest Region</li>
+                            <li>Microsoft Partner Advisory Council Member</li>
+                        </ul>
+                    </li>
 
-          <p>Utilities that <em>preprocess</em> languages into CSS</p>
 
-          <p>Allow for modular, DRY, development of CSS</p>
+                </ul>
+            </section>
 
-          <p>Provide a superset of features, such as variables, mixins, imports, and more</p>
+            <section>
+                <h1>Let's Get Started!</h1>
+            </section>
 
-          <p><a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">Less.js</a>, and <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> are the most popular</p>
+            <section data-state="css-preprocessors">
+                <style>
+                    .css-preprocessors header:after {
+                        content: "CSS Preprocessors";
+                    }
+                </style>
+                <!--<h2>CSS Preprocessors</h2>-->
+                <h3>What are they?</h3>
 
-          <p>We'll be focusing on Sass</p>
-        </section>
+                <p>Utilities that <em>preprocess</em> languages into CSS</p>
 
-        <section>
-          <h2>What's Bootstrap?</h2>
+                <p>Allow for modular, DRY, development of CSS</p>
 
-          <p>An HTML, CSS, and JS framework for rapid web development</p>
+                <p>Provide a superset of features, such as variables, mixins, imports, and more</p>
 
-          <p>Developed originally with Less.js, but now additionally has a Sass port</p>
+                <p><a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">Less.js</a>, and <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a> are the most popular</p>
 
-          <p>Includes lots of design patterns, widgets, interactive features, and more that you would expect out of a <strong>framework</strong></p>
-        </section>
+                <p>We'll be focusing on Sass</p>
+            </section>
 
-        <section>
-          <h2>Why Not Bootstrap?</h2>
+            <section data-state="whats-bootstrap">
+                <style>
+                    .whats-bootstrap header:after {
+                        content: "What's Bootstrap?";
+                    }
+                </style>
+                <!--<h2>What's Bootstrap?</h2>-->
 
-          <a href="http://getbootstrap.com/examples/theme/" target="_blank"><img src="img/vanillabootstrap.png" width="300" height="300" /></a>
+                <p>An HTML, CSS, and JS framework for rapid web development</p>
 
-          <p>Still have to work to customize it</p>
+                <p>Developed originally with Less.js, but now additionally has a Sass port</p>
 
-          <p>Lots of extra markup<br /><small>(non-domain semantic classes used to style; e.g. <em>col-sm-4</em>)</small></p>
+                <p>Includes lots of design patterns, widgets, interactive features, and more that you would expect out of a <strong>framework</strong>
+                </p>
+            </section>
 
-          <p>May get more features than needed</p>
-        </section>
+            <section data-state="why-not-bootstrap">
+                <style>
+                    .why-not-bootstrap header:after {
+                        content: "Why Not Bootstrap?";
+                    }
+                </style>
+                <!--<h2>Why Not Bootstrap?</h2>-->
 
-        <section>
-          <h2>Getting SASSy</h2>
+                <p>Still need to customize, or you get this:</p>
 
-          <p><a href="http://www.sass-lang.com/" target="_blank">Sass</a> is a Ruby-based CSS preprocessor. It is one of the most mature, and popular, preprocessors available. Getting started is <a href="http://www.sass-lang.com/install" target="_blank">easy</a>.</p>
+                <a href="http://getbootstrap.com/examples/theme/" target="_blank"><img src="img/vanillabootstrap.png" width="300" height="300" />
+                </a>
 
-            <pre><code data-trim class="css">
+                <p>Lots of extra markup <small>(e.g. <em>col-sm-4</em>)</small>
+                </p>
+
+                <p>May get more features than needed</p>
+            </section>
+
+            <section data-state="getting-sassy">
+                <style>
+                    .getting-sassy header:after {
+                        content: "Getting SASSy";
+                    }
+                </style>
+
+                <p><a href="http://www.sass-lang.com/" target="_blank">Sass</a> is a Ruby-based CSS preprocessor. It is one of the most mature, and popular, preprocessors available. Getting started is <a href="http://www.sass-lang.com/install" target="_blank">easy</a>.</p>
+
+                <pre><code data-trim class="css">
 // SCSS
 
 $base-text-color: #000;
@@ -151,216 +210,286 @@ $base-text-hover-color: #444;
 
 
             </code></pre>
-        </section>
+            </section>
 
-        <section>
-          <h2>Introducing <a href="http://bourbon.io/" target="_blank">Bourbon</a></h2>
+            <section data-state="introducing-bourbon">
+                <style>
+                    .introducing-bourbon header:after {
+                        content: "Introducing Bourbon";
+                    }
+                </style>
 
-          <a href="http://bourbon.io/" target="_blank" style="border: none;"><img src="img/bourbonlogo.png" style="width: 300px; height: auto; border:none; box-shadow: none;" /></a>
+                <a href="http://bourbon.io/" target="_blank" style="border: none;"><img src="img/bourbonlogo.png" style="width: 300px; height: auto; border:none; box-shadow: none;" />
+                </a>
 
-          <p>A simple and lightweight mixin <strong>library</strong> for Sass.</p>
+                <p>A simple and lightweight mixin <strong>library</strong> for Sass.</p>
 
-          <p>Gives you common CSS patterns to use, not entire design elements.</p>
+                <p>Gives you common CSS patterns to use, not entire design elements.</p>
 
-          <p>Abstracts many of the common pain-points in CSS (e.g. vendor prefixes and new standards).</p>
-        </section>
+                <p>Abstracts many of the common pain-points in CSS (e.g. vendor prefixes and new standards).</p>
+            </section>
 
-        <section>
-          <h2>Introducing <a href="http://bourbon.io/" target="_blank">Bourbon</a></h2>
+            <section data-state="introducing-bourbon-demo">
+                <style>
+                    .introducing-bourbon-demo header:after {
+                        content: "Introducing Bourbon";
+                    }
+                </style>
 
-          <h1><a href="../demos/introducing-bourbon/index.html" target="_demo">Demo</a></h1>
-          <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/introducing-bourbon" target="_blank">Source</a></h3>
-        </section>
+                <h1><a href="../demos/introducing-bourbon/index.html" target="_demo">Demo</a></h1>
+                <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/introducing-bourbon" target="_blank">Source</a></h3>
+            </section>
 
-        <section>
-          <h2>Bourbon Served <a href="http://neat.bourbon.io/" target="_blank">Neat</a></h2>
+            <section data-state="bourbon-served-neat">
+                <style>
+                    .bourbon-served-neat header:after {
+                        content: "Bourbon Served Neat";
+                    }
+                </style>
 
-          <a href="http://neat.bourbon.io/" target="_blank" style="border: none;"><img src="img/neatlogo.svg" style="width: 300px; height: auto; border:none; box-shadow: none;" /></a>
+                <a href="http://neat.bourbon.io/" target="_blank" style="border: none;"><img src="img/neatlogo.svg" style="width: 300px; height: auto; border:none; box-shadow: none;" />
+                </a>
 
-          <p>A <strong>lightweight</strong> semantic grid <strong>framework</strong> for Sass and Bourbon.</p>
+                <p>A <strong>lightweight</strong> semantic grid <strong>framework</strong> for Sass and Bourbon.</p>
 
-          <p>Extremely flexible, allowing for pushing your grid system directly into your domain.</p>
+                <p>Extremely flexible, allowing for pushing your grid system directly into your domain.</p>
 
-          <p>Supports responsive designs.</p>
-        </section>
+                <p>Supports responsive designs.</p>
+            </section>
 
-        <section>
-          <h2>Bourbon Served <a href="http://neat.bourbon.io/" target="_blank">Neat</a></h2>
+            <section data-state="bourbon-served-neat-demo">
+                <style>
+                    .bourbon-served-neat-demo header:after {
+                        content: "Bourbon Served Neat";
+                    }
+                </style>
 
-          <h1><a href="../demos/bourbon-served-neat/index.html" target="_demo">Demo</a></h1>
-          <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/bourbon-served-neat" target="_blank">Source</a></h3>
-        </section>
+                <h1><a href="../demos/bourbon-served-neat/index.html" target="_demo">Demo</a></h1>
+                <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/bourbon-served-neat" target="_blank">Source</a></h3>
+            </section>
 
-        <section>
-          <h2>A Splash of <a href="http://bitters.bourbon.io/" target="_blank">Bitters</a></h2>
+            <section data-state="a-splash-of-bitters">
+                <style>
+                    .a-splash-of-bitters header:after {
+                        content: "A Splash of Bitters";
+                    }
+                </style>
 
-          <a href="http://bitters.bourbon.io/" target="_blank" style="border: none;"><img src="img/bitterslogo.svg" style="width: 300px; height: auto; border:none; box-shadow: none;" /></a>
+                <a href="http://bitters.bourbon.io/" target="_blank" style="border: none;"><img src="img/bitterslogo.svg" style="width: 300px; height: auto; border:none; box-shadow: none;" />
+                </a>
 
-          <p>Scaffold styles, variables and structure for Bourbon projects.</p>
+                <p>Scaffold styles, variables and structure for Bourbon projects.</p>
 
-          <p>A starting point for your new web projects. Sets you up for success with predefined variables, type, grid settings (using Neat), and other elements.</p>
+                <p>A starting point for your new web projects. Sets you up for success with predefined variables, type, grid settings (using Neat), and other elements.</p>
 
-          <p>Meant to be modified; install once, edit, and run with it.</p>
-        </section>
+                <p>Meant to be modified; install once, edit, and run with it.</p>
+            </section>
 
-        <section>
-          <h2>A Splash of <a href="http://bitters.bourbon.io/" target="_blank">Bitters</a></h2>
+            <section data-state="a-splash-of-bitters-demo">
+                <style>
+                    .a-splash-of-bitters-demo header:after {
+                        content: "A Splash of Bitters";
+                    }
+                </style>
 
-          <h1><a href="../demos/a-splash-of-bitters/index.html" target="_demo">Demo</a></h1>
-          <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/a-splash-of-bitters" target="_blank">Source</a></h3>
-        </section>
+                <h1><a href="../demos/a-splash-of-bitters/index.html" target="_demo">Demo</a></h1>
+                <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/a-splash-of-bitters" target="_blank">Source</a></h3>
+            </section>
 
-        <section>
-          <h2>Ready for a <a href="http://refills.bourbon.io/" target="_blank">Refill?</a></h2>
+            <section data-state="ready-for-a-refill">
+                <style>
+                    .ready-for-a-refill header:after {
+                        content: "Ready for a Refill?";
+                    }
+                </style>
 
-          <a href="http://refills.bourbon.io/" target="_blank" style="border: none;"><img src="img/refillslogo.svg" style="width: 200px; height: auto; border:none; box-shadow: none;" /></a>
+                <a href="http://refills.bourbon.io/" target="_blank" style="border: none;"><img src="img/refillslogo.svg" style="width: 200px; height: auto; border:none; box-shadow: none;" />
+                </a>
 
-          <p>Starting points for common components and patterns utilizing Bourbon and Neat.</p>
+                <p>Starting points for common components and patterns utilizing Bourbon and Neat.</p>
 
-          <p>Excellent reference material for creating your own templates.</p>
+                <p>Excellent reference material for creating your own templates.</p>
 
-        </section>
+            </section>
 
-        <section>
-          <h2>Ready for a <a href="http://refills.bourbon.io/" target="_blank">Refill?</a></h2>
+            <section data-state="ready-for-a-refill-demo">
+                <style>
+                    .ready-for-a-refill-demo header:after {
+                        content: "Ready for a Refill?";
+                    }
+                </style>
 
-          <h1><a href="../demos/ready-for-a-refill/index.html" target="_demo">Demo</a></h1>
-          <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/ready-for-a-refill" target="_blank">Source</a></h3>
-        </section>
+                <h1><a href="../demos/ready-for-a-refill/index.html" target="_demo">Demo</a></h1>
+                <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/ready-for-a-refill" target="_blank">Source</a></h3>
+            </section>
 
-        <section>
-          <h2>Bartender Etiquette</h2>
+            <section data-state="bartender-etiquette">
+                <style>
+                    .bartender-etiquette header:after {
+                        content: "Bartender Etiquette";
+                    }
+                </style>
 
-          <p>Creating a complete project structure using our new tools.</p>
+                <p>Creating a complete project structure using our new tools.</p>
 
-          <h1><a href="../demos/bartender-etiquette/index.html" target="_demo">Demo</a></h1>
-          <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/bartender-etiquette" target="_blank">Source</a></h3>
-        </section>
+                <h1><a href="../demos/bartender-etiquette/index.html" target="_demo">Demo</a></h1>
+                <h3><a href="https://github.com/brandonmartinez/Make-A-SASSy-CSS-Cocktail/tree/master/demos/bartender-etiquette" target="_blank">Source</a></h3>
+            </section>
 
+            <!--
         <section>
           <h1>What about a live demo?</h1>
         </section>
+-->
 
-        <section>
-          <h1>Questions?</h1>
-        </section>
+            <section>
+                <h1>Questions?</h1>
+            </section>
 
-        <section>
-          <h2>Thank you!</h2>
+            <section data-state="thank-you">
+                <style>
+                    .thank-you header:after {
+                        content: "Thank You";
+                    }
+                </style>
 
-          <img src="img/avatar.jpg" style="width: 300px; height: auto;" />
-          <img src="img/skylinelogo.png" style="width: 400px; height: auto; border: none; box-shadow: none;" />
+                <img src="img/avatar.jpg" style="width: 300px; height: auto;" />
 
-          <p>
-            <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
-          </p>
+                <p>
+                    <small>Brandon Martinez | <a href="http://www.brandonmartinez.com/">brandonmartinez.com</a> | <a href="http://twitter.brandonmartinez.com">@brandonmartinez</a></small>
+                </p>
 
-          <p>
-            <small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
-          </p>
-        </section>
-      </div>
-
+                <p>
+                    <small>Skyline Technologies (We're Hiring!) | <a href="http://www.skylinetechnologies.com/">skylinetechnologies.com</a> | <a href="https://twitter.com/skylinetweets">@skylinetweets</a></small>
+                </p>
+            </section>
+        </div>
+        <footer class="page-footer">
+            <img class="logo" src="img/skyline-logo-footer.png" />
+        </footer>
     </div>
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
 
     <script>
+        Reveal.initialize({
+            // Display controls in the bottom right corner
+            controls: true,
 
-      Reveal.initialize({
-        // Display controls in the bottom right corner
-        controls: true,
+            // Display a presentation progress bar
+            progress: true,
 
-        // Display a presentation progress bar
-        progress: true,
+            // Display the page number of the current slide
+            slideNumber: false,
 
-        // Display the page number of the current slide
-        slideNumber: false,
+            // Push each slide change to the browser history
+            history: true,
 
-        // Push each slide change to the browser history
-        history: true,
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
 
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
+            // Enable the slide overview mode
+            overview: true,
 
-        // Enable the slide overview mode
-        overview: true,
+            // Vertical centering of slides
+            center: true,
 
-        // Vertical centering of slides
-        center: true,
+            // Enables touch navigation on devices with touch input
+            touch: true,
 
-        // Enables touch navigation on devices with touch input
-        touch: true,
+            // Loop the presentation
+            loop: false,
 
-        // Loop the presentation
-        loop: false,
+            // Change the presentation direction to be RTL
+            rtl: false,
 
-        // Change the presentation direction to be RTL
-        rtl: false,
+            // Turns fragments on and off globally
+            fragments: true,
 
-        // Turns fragments on and off globally
-        fragments: true,
+            // Flags if the presentation is running in an embedded mode,
+            // i.e. contained within a limited portion of the screen
+            embedded: false,
 
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
+            // Number of milliseconds between automatically proceeding to the
+            // next slide, disabled when set to 0, this value can be overwritten
+            // by using a data-autoslide attribute on your slides
+            autoSlide: 0,
 
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
+            // Stop auto-sliding after user input
+            autoSlideStoppable: true,
 
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
 
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
+            // Hides the address bar on mobile devices
+            hideAddressBar: true,
 
-        // Hides the address bar on mobile devices
-        hideAddressBar: true,
+            // Opens links in an iframe preview overlay
+            previewLinks: false,
 
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
+            // Transition style
+            transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
-        // Transition style
-        transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
 
-        // Transition speed
-        transitionSpeed: 'default', // default/fast/slow
+            // Transition style for full page slide backgrounds
+            backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
 
-        // Transition style for full page slide backgrounds
-        backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+            // Number of slides away from the current that are visible
+            viewDistance: 3,
 
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
+            // Parallax background image
+            // parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
-        // Parallax background image
-        // parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+            // // Parallax background size
+            // parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
 
-        // // Parallax background size
-        // parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+            // theme: 'sky', // available themes are in /css/theme
 
-        // theme: 'sky', // available themes are in /css/theme
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
 
-        // Parallax scrolling
-        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-        // parallaxBackgroundSize: '2100px 900px',
-
-        // Optional libraries used to extend on reveal.js
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() {
-            hljs.initHighlightingOnLoad();
-          } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
-      });
-
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
     </script>
 
-  </body>
+</body>
+
 </html>
